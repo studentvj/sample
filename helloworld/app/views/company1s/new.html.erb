@@ -1,0 +1,11 @@
+<%= link_to "New Offer", new_test_path %>
+<%= form_for(@person) do |f| %>
+	<div>
+
+		<%= f.label :firstname %>
+		<%= f.text_field :firstname %>
+	</div>
+	<div>
+		<%= f.submit "create Person"%>
+	</div>
+<% end %>
